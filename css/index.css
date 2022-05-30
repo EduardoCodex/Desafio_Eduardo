@@ -1,0 +1,395 @@
+/*Home*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.082);
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo__img {
+    height: 100px;
+}
+
+.logo__name {
+    font-size: 40px;
+}
+
+.link {
+    padding: 30px;
+    color: black;
+}
+
+.titulo {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.055);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.titulo__inicial {
+    font-size: 80px;
+}
+
+.titulo__sub {
+    font-size: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.055);
+    margin-top: 200px;
+    padding: 20px;
+}
+
+.footer__icon {
+    height: 60px;
+}
+
+/*Quienes Somos*/
+
+.somos__titulo {
+    display: flex;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.065);
+}
+
+.somos__div {
+    display: flex;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    align-items: center;
+}
+
+.somos__div2 {
+    justify-content: center;
+    text-align: center;
+}
+
+.somos__img {
+    height: 400px;
+    border: solid rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.somos__parrafo {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgba(240, 248, 255, 0.438);
+}
+
+/*Servicios*/
+
+.depilacion {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.065);
+}
+
+.depilacion__div {
+    display: flex;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    align-items: center;
+}
+
+.depilacion__div2 {
+    justify-content: center;
+    text-align: center;
+}
+
+.depilacion__img {
+    height: 400px;
+    border: solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.depilacion__parrafo {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgba(240, 248, 255, 0.438);
+}
+
+.radiofrecuencia {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.065);
+}
+
+.radiofrecuencia__div {
+    display: flex;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    align-items: center;
+}
+
+.radiofrecuencia__img {
+    height: 400px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.radiofrecuencia__parrafo {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgba(240, 248, 255, 0.438);
+}
+
+/*Productos*/
+
+.producto__div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.065);
+}
+
+.producto__img {
+    display: grid;
+    margin-left: 100px;
+    margin-top: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+     
+}
+
+
+.img__1 {
+    height: 20em;
+    border: solid rgba(0, 0, 0, 0.459);
+}
+
+.img__2 {
+    height: 20em;
+    border: solid rgba(0, 0, 0, 0.459);
+}
+
+.img__3 {
+    height: 20em;
+    border: solid rgba(0, 0, 0, 0.459);
+}
+
+.img__4 {
+    height: 20em;
+    border: solid rgba(0, 0, 0, 0.459);
+}
+
+.img__5 {
+    height: 20em;
+    border: solid rgba(0, 0, 0, 0.459);
+}
+
+.img__6 {
+    height: 20em;
+    border: solid rgba(0, 0, 0, 0.459);
+}
+
+.img__7 {
+    height: 20em;
+    border: solid rgba(0, 0, 0, 0.459);
+}
+
+/*Contacto*/
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+@media (max-width: 480px) {
+
+    /*Mobile Mobile*/
+
+    header {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .logo__name {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .logo__img {
+        height: 80px;
+    }
+
+    a {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .titulo {
+        text-align: center;
+    }
+
+    .link {
+        padding: 15px;
+    }
+
+    .titulo__inicial {
+        font-size: 45px;
+    }
+
+    .titulo__sub {
+        font-size: 20px;
+    }
+
+    /*Quienes Somos Mobile*/
+
+    .somos__titulo {
+        font-size: 40px;
+    }
+
+    .somos__img {
+        height: 250px;
+    }
+
+    .somos__div2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*Servicos Mobile*/
+
+    .depilacion {
+        font-size: 40px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .depilacion__img {
+        height: 250px;
+    }
+
+    .depilacion__div2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .radiofrecuencia {
+        font-size: 40px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .radiofrecuencia__img {
+        height: 250px;
+    }
+
+    /*Productos Mobile*/
+
+    .container {
+        margin-top: 40px;
+    }
+
+    .producto__div {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .img__1 {
+        height: 220px;
+        justify-content: center center;
+        align-items: center;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+
+    .img__2 {
+        height: 220px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .img__3 {
+        height: 220px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .img__4 {
+        height: 220px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .img__5 {
+        height: 220px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .img__6 {
+        height: 220px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .img__7 {
+        height: 220px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .producto__img {
+        grid-template-columns: 220px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
