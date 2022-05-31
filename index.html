@@ -4,53 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
-    <title>Nutriestec</title>
+    <title>nutriestec</title>
 </head>
 <body>
 
-<!--HEADER-->
-
-    <header class="card text-bg-dark d-flex flex-row mb-3">    
-        <div>
-            <img class="logo__img" src="./img/logotipo.svg.png" alt="">
-        </div>    
-        <div>
-        <h2 class="logo__name fw-bolder">NUTRIESTEC</h2>
+    <header>
+        <div class="container">
+            <p class="logo">Nutriestec</p>
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="./Views/quienessomos.html">Quienes Somos</a>
+                <a href="./Views/servicio.html">Servicios</a>
+                <a href="./Views/producto.html">Productos</a>
+                <a href="./Views/contacto.html">Contacto</a>
+            </nav>
         </div>
+    </header>
+    
+    <section id="titulo">
+        <h1>Nutriestec</h1>
+        <h2>“Deje que los alimentos sean tu medicina y que la medicina sea tu alimento”</h2>
+        <button>Aplica YA!</button>
+    </section>
 
-<!--LINKS-->     
-        
-    <nav>
-        
-        <a class="link" href="./index.html">Home</a>
-        <a class="link" href="./Views/quienessomos.html">Quienes somos</a>
-        <a class="link" href="./Views/servicio.html">Servicios</a>
-        <a class="link" href="./Views/producto.html">Producto</a>
-        <a class="link" href="./Views/contacto.html">Contacto</a>
-
-    </nav>
-</header>
-
-<!--PORTADA-->
-
-
-
-    <section>
-        <div class="titulo">
-            <h1 class="titulo__inicial fw-bolder">BIENVENIDOS A NUTRIESTEC</h1>
-            <h2 class="titulo__sub">La nutricion es la base de todo</h2>
+    <section id="somos-nutriestec">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>Somos <span class="color-acento">
+                    Nutriestec</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, illo a. Animi laboriosam in quo quidem ab ex eum quisquam et reiciendis deserunt, corporis aperiam eveniet earum obcaecati libero nesciunt.</p>
+            </div>
         </div>
-</section>
+    </section>
+        
+    <section  id="nuestros-planes">
+        <div class="container">
+            <h2>Planes Disponibles</h2>
+            <div class="planes">
+                <div class="carta">
+                    <h3>Dermapen</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet corporis cum! Ducimus quod optio est consequatur adipisci rem, quaerat, reiciendis, numquam fuga quasi beatae! Minima suscipit at soluta veniam!</p>
+                    <button>+Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Radio Frecuencia</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet corporis cum! Ducimus quod optio est consequatur adipisci rem, quaerat, reiciendis, numquam fuga quasi beatae! Minima suscipit at soluta veniam!</p>
+                    <button>+Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Vacuterapia</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet corporis cum! Ducimus quod optio est consequatur adipisci rem, quaerat, reiciendis, numquam fuga quasi beatae! Minima suscipit at soluta veniam!</p>
+                    <button>+Info</button>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+    <section id="caracteristicas">
+        <div class="container">
+            <ul>
+                <li><img class="check" src="/img/garrapata.png" alt=""> 100% Confiables</li>
+                <li><img class="check" src="/img/garrapata.png" alt=""> Horarios Programados</li>
+                <li><img class="check" src="/img/garrapata.png" alt=""> Nutricionista Profesional</li>
+            </ul>
+        </div>
+    </section>
 
-<!--FOOTER-->
-
-<footer class="card text-bg-dark mb-3 d-flex flex-row mb-3">
-    <a  tittle="Twitter" href="https://twitter.com/Nutriestec"><img class="footer__icon" src="./img/twitter.png" alt="logo de twitter"></a>
-    <a  tittle="Instagram" href="https://www.instagram.com/nutriestec.p/"><img class="footer__icon" src="./img/insta.png" alt="logo de instagram"></a> 
-    <a  tittle="facebook" href="https://www.facebook.com/Eduardodp21"><img class="footer__icon" src="./img/facebook-logo-3-1.png" alt=""></a>
-</footer>
-
+    <footer>
+        <a ttitle="" href="https://twitter.com/eedpacheco"><img class="icon" src="/img/twitter.png" alt=""></a>
+        <a ttitle="" href="https://www.facebook.com/Eduardodp21"><img class="icon" src="/img/facebook-logo-3-1.png" alt=""></a>
+        <a ttitle="Instragram" href="https://www.instagram.com/nutriestec.p/"><img class="icon" src="/img/insta.png" alt=""></a>
+    </footer>
 </body>
 </html>
