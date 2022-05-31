@@ -5,7 +5,6 @@ body {
 }
 header {
     display: flex;
-    background: linear-gradient(90deg, rgba(97,97,97,0.5) 0%, rgba(222,222,222,0.5) 19%, rgba(242,242,242,0.5) 50%, rgba(222,222,222,0.5) 80%, rgba(97,97,97,0.5) 100%);
     justify-content: space-around;
     align-items: center;
     padding: 20px;
@@ -13,26 +12,18 @@ header {
 
 .logo__img {
     height: 100px;
-    transition-duration: 1s;
-}
-
-.logo__img:hover {
-    height: 120px;
 }
 
 .logo__name {
-    font-size: 40px;
+    font-size: 50px;
+    color: white;
+    padding: 30px;
 }
 
 .link {
     padding: 30px;
-    color: black;
-    transition-duration: 1s ;
-}
-
-a:hover {
-    color: white;
-    font-size: 25px;
+    color: rgb(255, 255, 255);
+    
 }
 
 .titulo {
@@ -42,10 +33,13 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 250px;
+    padding: 60px;
+    
 }
 
 .titulo__inicial {
     font-size: 80px;
+    color: black;
 }
 
 .titulo__sub {
@@ -56,8 +50,8 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(90deg, rgba(97,97,97,0.5) 0%, rgba(222,222,222,0.5) 19%, rgba(242,242,242,0.5) 50%, rgba(222,222,222,0.5) 80%, rgba(97,97,97,0.5) 100%);
-    margin-top: 200px;
+    background: rgba(0, 0, 0, 0.055);
+    margin-top: 250px;
     padding: 20px;
 }
 
