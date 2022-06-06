@@ -166,7 +166,7 @@ header a:hover {
 footer {
     display: flex;
     justify-content: space-around;
-    background-color: rgba(30,30,30);
+    background-color:rgba(30,30,30);
     padding: 50px;
 }
 
@@ -210,6 +210,40 @@ footer {
     color: white;
 }
 
+#servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    background-image: url("/img/ServicioPortadaa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#servicios h1 {
+    color: black;
+}
+
+#derma-servicio {
+    text-align: center;
+    padding: 100px 15px;
+}
+
+
+#vacu-servicio {
+    text-align: center;
+    padding: 100px 15px;
+    background-color: rgba(30,30,30);
+    color: white; 
+}
+
+#radio-servicio {
+    text-align: center;
+    padding: 100px 15px;
+}
 
 
 @media (min-width: 720px) {
@@ -228,6 +262,7 @@ footer {
         position: fixed;
         width: 100%;
     }
+
 
     #titulo h1{
         font-size: 100px;
@@ -358,5 +393,86 @@ footer {
         width: 500px;
         background-size: cover;
         text-align: center;
+    }
+
+    /*Servicio*/
+
+    #servicios h1 {
+        font-size: 80px;
+    }
+
+    #derma-servicio .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #derma-servicio .img-container {
+        background-image: url("/img/DermapenImg.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+        background-size: cover;
+    }
+
+    #derma-servicio .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    #vacu-servicio .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #vacu-servicio .img-container {
+        background-image: url("/img/VacuterapiaImg.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+        background-size: cover;
+    }
+
+    #vacu-servicio .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    #radio-servicio .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #radio-servicio .img-container {
+        background-image: url("/img/RadioFrecuenciaImg.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+        background-size: cover;
+    }
+
+    #radio-servicio .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 20px;
     }
 }
