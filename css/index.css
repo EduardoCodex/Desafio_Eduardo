@@ -86,7 +86,7 @@ header a:hover {
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: url(/img/nutricion\ edit.jpg);
+    background-image: url("../img/nutricion\ edit.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -133,17 +133,17 @@ header a:hover {
 }
 
 .carta:first-child {
-    background-image: url("/img/MICRONEEDLING-CON-DERMAPEN-BANNER.jpg");
+    background-image: url("../img/MICRONEEDLING-CON-DERMAPEN-BANNER.jpg");
 
 }
 
 .carta:nth-child(2) {
-    background-image: url("/img/radiofrecuencia.jpg");
+    background-image: url("../img/radiofrecuencia.jpg");
 
 }
 
 .carta:nth-child(3) {
-    background-image: url("/img/vacuterapia.jpg");
+    background-image: url("../img/vacuterapia.jpg");
  
 }
 
@@ -183,7 +183,7 @@ footer {
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: url("/img/QuienesSomoss.jpg");
+    background-image: url("../img/QuienesSomoss.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -210,14 +210,16 @@ footer {
     color: white;
 }
 
+/*Servicios*/
+
 #servicios {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 60vh;
-    background-image: url("/img/ServicioPortadaa.jpg");
+    height: 90vh;
+    background-image: url("../img/ServicioPortadaa.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -254,7 +256,7 @@ footer {
     text-align: center;
     flex-direction: column;
     height: 60vh;
-    background-image: url("/img/ServicioPortadaa.jpg");
+    background-image: url("../img/ServicioPortadaa.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -270,7 +272,7 @@ footer {
     text-align: center;
     flex-direction: column;
     height: 60vh;
-    background-image: url("/img/ServicioPortadaa.jpg");
+    background-image: url("../img/ServicioPortadaa.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -367,10 +369,11 @@ input[type=text], select, textarea {
     }
 
     #somos-nutriestec .img-container{
+        background-image: url("../img/Saludable.jpg");
         background-size: cover;
         background-position: center center;
-        height: 50%;
-        width: 50%;
+        height: 500px;
+        width: 500px;
         background-size: cover;
 
     }
@@ -410,7 +413,7 @@ input[type=text], select, textarea {
     }
 
     #quienes-somos .img-container {
-        background-image: url(/img/nutricionista.png);
+        background-image: url("../img/nutricionista.png");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -446,7 +449,7 @@ input[type=text], select, textarea {
     }
 
     #nuestra-mision .img-container {
-        background-image: url("/img/Nuestra-mision.jpg");
+        background-image: url("../img/Nuestra-mision.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -462,7 +465,7 @@ input[type=text], select, textarea {
     }
 
     #mision .img-container {
-        background-image: url("/img/Mision.png");
+        background-image: url("../img/Mision.png");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -483,7 +486,7 @@ input[type=text], select, textarea {
     }
 
     #derma-servicio .img-container {
-        background-image: url("/img/DermapenImg.jpg");
+        background-image: url("../img/DermapenImg.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -508,7 +511,7 @@ input[type=text], select, textarea {
     }
 
     #vacu-servicio .img-container {
-        background-image: url("/img/VacuterapiaImg.jpg");
+        background-image: url("../img/VacuterapiaImg.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -533,7 +536,7 @@ input[type=text], select, textarea {
     }
 
     #radio-servicio .img-container {
-        background-image: url("/img/RadioFrecuenciaImg.jpg");
+        background-image: url("../img/RadioFrecuenciaImg.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
