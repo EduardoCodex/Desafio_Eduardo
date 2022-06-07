@@ -86,7 +86,7 @@ header a:hover {
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: url("/img/nutricion\ edit.jpg");
+    background-image: url(/img/nutricion\ edit.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -171,7 +171,7 @@ footer {
 }
 
 .icon {
-    height: 80px;
+    height: 40px;
 }
 
 /*Quienes Somos */
@@ -245,6 +245,82 @@ footer {
     padding: 100px 15px;
 }
 
+/*Productos*/
+
+#productos-nutri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    background-image: url("/img/ServicioPortadaa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#productos .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(30,30,30);
+    
+}
+
+.img_p {
+    width: 200px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/*contacto*/
+
+#contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    background-image: url("/img/ServicioPortadaa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  #contactanos .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
 
 @media (min-width: 720px) {
     header .container{
@@ -261,6 +337,10 @@ footer {
     header{
         position: fixed;
         width: 100%;
+    }
+
+    .icon {
+        height: 80px;
     }
 
 
@@ -475,4 +555,22 @@ footer {
         flex-direction: column;
         padding-left: 20px;
     }
+
+    /*Prodcutos*/
+
+
+    /*Contacto*/
+
+    #contacto h1 {
+        font-size: 80px;
+    }
+
+    #contacto {
+        margin-bottom: 50px;
+    }
+
+    #contactanos {
+        margin-bottom: 50px;
+    }
+
 }
