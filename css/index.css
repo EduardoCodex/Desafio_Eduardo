@@ -182,7 +182,7 @@ footer {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 60vh;
+    height: 90vh;
     background-image: url("/img/QuienesSomoss.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -260,20 +260,6 @@ footer {
     background-position: center center;
 }
 
-#productos .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgba(30,30,30);
-    
-}
-
-.img_p {
-    width: 200px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
 
 /*contacto*/
 
@@ -334,6 +320,15 @@ input[type=text], select, textarea {
         padding-right: 10px;
     }
 
+    a {
+        transition: all .3s linear;
+    }
+
+    a:hover {
+        transform: scale(1.1, 1.1);
+        
+    }
+
     header{
         position: fixed;
         width: 100%;
@@ -368,15 +363,16 @@ input[type=text], select, textarea {
     #somos-nutriestec .container{
         display: flex;
         justify-content: space-evenly;
+        margin: 0;
     }
 
     #somos-nutriestec .img-container{
-        background-image: url("/img/Saludable.jpg");
         background-size: cover;
         background-position: center center;
-        height: 500px;
-        width: 500px;
+        height: 50%;
+        width: 50%;
         background-size: cover;
+
     }
 
     #somos-nutriestec h2 {
@@ -414,7 +410,7 @@ input[type=text], select, textarea {
     }
 
     #quienes-somos .img-container {
-        background-image: url("/img/nutricionista.png");
+        background-image: url(/img/nutricionista.png);
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -558,6 +554,54 @@ input[type=text], select, textarea {
 
     /*Prodcutos*/
 
+    .grid-container {
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(30,30,30);
+        padding: 100px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "img_1 img_2 img_3"
+        "img_4 img_5 img_6";
+    }
+
+    .grid-container img {
+        padding: 50px;
+    }
+
+    .img_1 {
+        grid-area: img_1;
+        width: 80%;
+        
+    }
+
+    .img_2 {
+        grid-area: img_2;
+        width: 80%;
+    }
+
+    .img_3 {
+        grid-area: img_3;
+        width: 80%;
+    }
+
+    .img_4 {
+        grid-area: img_4;
+        width: 80%;
+    }
+
+    .img_5 {
+        grid-area: img_5;
+        width: 80%;
+    }
+
+    .img_6 {
+        grid-area: img_6;
+        width: 80%;
+    }
 
     /*Contacto*/
 

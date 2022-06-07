@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
     <title>nutriestec</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -30,7 +32,7 @@
 
     <section id="somos-nutriestec">
         <div class="container">
-            <div class="img-container"></div>
+            <div class="img-container" data-aos="fade-right"> <img src="/img/Saludable.jpg" alt=""></div>
             <div class="texto">
                 <h2>Somos <span class="color-acento">
                     Nutriestec</span></h2>
@@ -43,17 +45,20 @@
         <div class="container">
             <h2>Planes Disponibles</h2>
             <div class="planes">
-                <div class="carta">
+                <div class="carta" data-aos="fade-up"
+                data-aos-duration="2000">
                     <h3>Dermapen</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet corporis cum! Ducimus quod optio est consequatur adipisci rem, quaerat, reiciendis, numquam fuga quasi beatae! Minima suscipit at soluta veniam!</p>
                     <button>+Info</button>
                 </div>
-                <div class="carta">
+                <div class="carta" data-aos="fade-up"
+                data-aos-duration="2000">
                     <h3>Radio Frecuencia</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet corporis cum! Ducimus quod optio est consequatur adipisci rem, quaerat, reiciendis, numquam fuga quasi beatae! Minima suscipit at soluta veniam!</p>
                     <button>+Info</button>
                 </div>
-                <div class="carta">
+                <div class="carta" data-aos="fade-up"
+                data-aos-duration="2000">
                     <h3>Vacuterapia</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet corporis cum! Ducimus quod optio est consequatur adipisci rem, quaerat, reiciendis, numquam fuga quasi beatae! Minima suscipit at soluta veniam!</p>
                     <button>+Info</button>
@@ -77,5 +82,10 @@
         <a ttitle="" href="https://www.facebook.com/Eduardodp21"><img class="icon" src="/img/facebook-logo-3-1.png" alt=""></a>
         <a ttitle="Instragram" href="https://www.instagram.com/nutriestec.p/"><img class="icon" src="/img/insta.png" alt=""></a>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
