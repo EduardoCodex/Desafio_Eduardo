@@ -1,0 +1,10 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: map-get($colores, primary);
+    padding: 50px;
+
+    .icon{
+        height: 40px;
+    }
+}

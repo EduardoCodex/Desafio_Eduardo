@@ -1,0 +1,111 @@
+
+/*Home*/
+
+#titulo {
+    @include flex (column, center, center);
+    text-align: center;
+    height: 90vh;
+    background-image: url("../img/nutricion edit.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1 {
+    color: map-get($colores, text-color);
+    }
+
+    h2 {
+    padding-bottom: 40px;
+    font-size: 20px;
+    }
+}    
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.322);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322);
+    color: black;
+    background-color: map-get($colores, alternative);
+
+    &:hover {
+    background-color: green;
+    }
+}   
+
+#somos-nutriestec {
+    text-align: center;
+    padding: $spacing-large;
+
+    .color-acento {
+        color: map-get($colores, secundary);
+    }
+}
+
+#nuestros-planes {
+    background-color: map-get($colores, primary);
+    color: white;
+
+    .container {
+    text-align: center;
+    padding: $spacing-medium;
+    }
+
+    h2 {
+    margin-top: 0;
+    }
+    
+    p {
+        display: none;
+    }
+
+    .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    }
+
+    & button {
+        @extend button;
+        background-color:  rgb(255, 255, 255);
+        
+        &:hover {
+            background-color:  rgba(255, 255, 255, 0.747);
+        }
+    }
+}
+
+.carta:first-child {
+    background-image: url("../img/MICRONEEDLING-CON-DERMAPEN-BANNER.jpg");
+
+}
+
+.carta:nth-child(2) {
+    background-image: url("../img/radiofrecuencia.jpg");
+
+}
+
+.carta:nth-child(3) {
+    background-image: url("../img/vacuterapia.jpg");
+ 
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#caracteristicas li {
+    margin: 15px 0px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.check {
+    height: 40px;
+}

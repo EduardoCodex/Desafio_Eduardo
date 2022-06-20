@@ -1,0 +1,36 @@
+     /*Colors*/
+
+    $colores: (
+    primary: rgba(30,30,30),
+    secundary: rgb(11, 133, 0),
+    alternative:  rgb(114, 245, 114),
+    text-color: rgb(0, 0, 0),
+    );
+
+    @each $color, $value in $colores {
+     .#{$color} {
+          color: #{$value};
+     }
+     
+    }
+    
+
+    /*Spacings*/
+
+    $spacing-large: 200px 15px;
+    $spacing-medium: 100px 10px;
+
+    /*Font-Family*/
+
+    $font-principal: 'Roboto', sans-serif;
+    
+    /*Font sizes*/
+
+    $text-large: 3.5em;
+    $text-medium: 2.7em;
+    $text-base: 1.25em;
+    $text-small: 2em;
+    $text-xsmall: 1.25
+
+    
+

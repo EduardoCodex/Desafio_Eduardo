@@ -1,0 +1,40 @@
+
+/*Quienes Somos*/
+
+#quienessomos {
+    @include flex (column, center, center);
+    text-align: center;
+    height: 90vh;
+    background-image: url("../img/QuienesSomoss.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1 {
+    font-size: 80px;
+    }
+
+    .emojipensando {
+    height: 100px;
+    }
+} 
+
+#quienes-somos {
+    text-align: center;
+    padding: $spacing-large;
+
+    .color-acento {
+        color: map-get($colores, secundary);
+        }
+}
+
+#nuestra-mision {
+    text-align: center;
+    padding: $spacing-medium;
+    background-color: map-get($colores, primary);
+    color: white;
+
+    .color-acento {
+        color: map-get($colores, secundary);
+        }
+}

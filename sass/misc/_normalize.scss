@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: $text-large;}
+h2{ font-size: $text-medium;}
+h3{ font-size: $text-small;}
+p{ font-size: $text-base;}
+ul{ list-style: none;}
+li {font-size: $text-xsmall;}
+
+
+

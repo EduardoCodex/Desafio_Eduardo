@@ -1,10 +1,30 @@
+/*Misc*/
+/*Colors*/
+.primary {
+  color: rgb(30, 30, 30);
+}
+
+.secundary {
+  color: rgb(11, 133, 0);
+}
+
+.alternative {
+  color: rgb(114, 245, 114);
+}
+
+.text-color {
+  color: rgb(0, 0, 0);
+}
+
+/*Spacings*/
+/*Font-Family*/
+/*Font sizes*/
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -29,70 +49,329 @@ ul {
 }
 
 li {
-  font-size: 1.25em;
+  font-size: 1.25;
 }
 
+/*Partials*/
 header {
-  background-color: whitesmoke;
+  background-color: rgb(245, 245, 245);
+  z-index: 1000;
 }
-
+header a:hover {
+  color: rgb(114, 245, 114);
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .container {
+  max-width: 1400px;
+  margin: auto;
+}
 header .logo {
   margin: 0;
   padding: 30px 30px;
   font-weight: bold;
-  color: #0b8500;
+  color: rgb(15, 170, 1);
   font-size: 35px;
 }
-
-header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-bottom: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 header a {
   padding: 5px 15px;
   text-decoration: none;
   font-weight: bold;
   color: black;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #1e1e1e;
+  justify-content: space-around;
+  background-color: rgb(30, 30, 30);
   padding: 50px;
 }
-
 footer .icon {
   height: 40px;
+}
+
+/*Views*/
+/*Home*/
+#titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  background-image: url("../img/nutricion edit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#titulo h1 {
+  color: rgb(0, 0, 0);
+}
+#titulo h2 {
+  padding-bottom: 40px;
+  font-size: 20px;
+}
+
+button, #nuestros-planes button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.322);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322);
+  color: black;
+  background-color: rgb(114, 245, 114);
+}
+button:hover, #nuestros-planes button:hover {
+  background-color: green;
+}
+
+#somos-nutriestec {
+  text-align: center;
+  padding: 200px 15px;
+}
+#somos-nutriestec .color-acento {
+  color: rgb(11, 133, 0);
+}
+
+#nuestros-planes {
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+#nuestros-planes .container {
+  text-align: center;
+  padding: 100px 10px;
+}
+#nuestros-planes h2 {
+  margin-top: 0;
+}
+#nuestros-planes p {
+  display: none;
+}
+#nuestros-planes .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 10px;
+}
+#nuestros-planes button {
+  background-color: rgb(255, 255, 255);
+}
+#nuestros-planes button:hover {
+  background-color: rgba(255, 255, 255, 0.747);
+}
+
+.carta:first-child {
+  background-image: url("../img/MICRONEEDLING-CON-DERMAPEN-BANNER.jpg");
+}
+
+.carta:nth-child(2) {
+  background-image: url("../img/radiofrecuencia.jpg");
+}
+
+.carta:nth-child(3) {
+  background-image: url("../img/vacuterapia.jpg");
+}
+
+#caracteristicas .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#caracteristicas li {
+  margin: 15px 0px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.check {
+  height: 40px;
+}
+
+/*Quienes Somos*/
+#quienessomos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  background-image: url("../img/QuienesSomoss.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#quienessomos h1 {
+  font-size: 80px;
+}
+#quienessomos .emojipensando {
+  height: 100px;
+}
+
+#quienes-somos {
+  text-align: center;
+  padding: 200px 15px;
+}
+#quienes-somos .color-acento {
+  color: rgb(11, 133, 0);
+}
+
+#nuestra-mision {
+  text-align: center;
+  padding: 100px 10px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+#nuestra-mision .color-acento {
+  color: rgb(11, 133, 0);
+}
+
+/*Servicios*/
+#servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  background-image: url("../img/ServicioPortadaa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#servicios h1 {
+  color: black;
+}
+
+#derma-servicio {
+  text-align: center;
+  padding: 100px 15px;
+}
+
+#vacu-servicio {
+  text-align: center;
+  padding: 100px 15px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+#radio-servicio {
+  text-align: center;
+  padding: 100px 15px;
+}
+
+/*Productos*/
+#productos-nutri {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  background-image: url("../img/ServicioPortadaa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid-container {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(30, 30, 30);
+  padding: 100px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "img_1" "img_2" "img_3" "img_4" "img_5" "img_6";
+}
+.grid-container img {
+  padding: 20px;
+}
+
+.img_1 {
+  grid-area: img_1;
+  width: 80%;
+}
+
+.img_2 {
+  grid-area: img_2;
+  width: 80%;
+}
+
+.img_3 {
+  grid-area: img_3;
+  width: 80%;
+}
+
+.img_4 {
+  grid-area: img_4;
+  width: 80%;
+}
+
+.img_5 {
+  grid-area: img_5;
+  width: 80%;
+}
+
+.img_6 {
+  grid-area: img_6;
+  width: 80%;
+}
+
+/*Contacto*/
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  background-image: url("../img/ServicioPortadaa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#contactanos .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 @media (min-width: 720px) {
@@ -101,36 +380,307 @@ footer .icon {
     width: 100%;
   }
   header .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
   header nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     padding-bottom: 0px;
   }
-  footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  header a {
+    transition: all 0.3s linear;
+  }
+  header a:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  #titulo h1 {
+    font-size: 100px;
+    margin: 5px;
+    margin-top: 50px;
+  }
+
+  #titulo h2 {
+    font-size: 30px;
+  }
+
+  #somos-nutriestec .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  #somos-nutriestec .container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  #somos-nutriestec .img-container {
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/Saludable.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #somos-nutriestec h2 {
+    margin-top: 0px;
+  }
+
+  #nuestros-planes .planes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nuestros-planes p {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  #nuestros-planes h3 {
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  #nuestros-planes .carta {
+    padding: 100px;
+  }
+
+  #nuestros-planes h2 {
+    font-size: 100px;
+  }
+
+  #caracteristicas li {
+    font-size: 40px;
+  }
+
+  /*Quienes Somos*/
+  #quienes-somos .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #quienes-somos .img-container {
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/nutricionista.png");
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #quienes-somos .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  #nuestra-mision .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #nuestra-mision .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  #nuestra-mision .img-container {
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/Nuestra-mision.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #mision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+  #mision .img-container {
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/Mision.png");
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+  }
+
+  /*Servicio*/
+  #servicios h1 {
+    font-size: 80px;
+  }
+
+  #derma-servicio .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #derma-servicio .img-container {
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/DermapenImg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #derma-servicio .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  #vacu-servicio .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #vacu-servicio .img-container {
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/VacuterapiaImg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #vacu-servicio .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  #radio-servicio .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #radio-servicio .img-container {
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/RadioFrecuenciaImg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #radio-servicio .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  /*Prodcutos*/
+  .grid-container {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    padding: 100px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "img_1 img_2 img_3" "img_4 img_5 img_6";
+  }
+
+  #productos-nutri h1 {
+    font-size: 90px;
+  }
+
+  .grid-container img {
+    padding: 50px;
+  }
+
+  .img_1 {
+    grid-area: img_1;
+    width: 80%;
+  }
+
+  .img_2 {
+    grid-area: img_2;
+    width: 80%;
+  }
+
+  .img_3 {
+    grid-area: img_3;
+    width: 80%;
+  }
+
+  .img_4 {
+    grid-area: img_4;
+    width: 80%;
+  }
+
+  .img_5 {
+    grid-area: img_5;
+    width: 80%;
+  }
+
+  .img_6 {
+    grid-area: img_6;
+    width: 80%;
+  }
+
+  /*Contacto*/
+  #contacto h1 {
+    font-size: 90px;
+  }
+
+  #contacto {
+    margin-bottom: 50px;
+  }
+
+  #contactanos {
+    margin-bottom: 50px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
   }
   footer .icon {
     height: 80px;
   }
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
