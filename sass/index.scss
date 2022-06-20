@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*Misc*/
 
 @import './misc/variables';
@@ -337,3 +338,19 @@
         }
 
 }
+=======
+@import './Misc/variables.scss';
+@import './Misc/normalize.scss';
+
+
+
+@import './Partials/header.scss';
+@import './Partials/footer.scss';
+
+
+
+@import './Views/quienessomos.scss';
+@import './Views/servicio.scss';
+@import './Views/producto.scss';
+@import './Views/contacto.scss';
+>>>>>>> 44746c4b472721b936e1b2327e018cfb071d16d6
