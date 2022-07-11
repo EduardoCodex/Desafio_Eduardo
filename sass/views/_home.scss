@@ -1,7 +1,7 @@
 
 /*Home*/
 
-#titulo {
+.titulo {
     @include flex (column, center, center);
     text-align: center;
     height: 90vh;
@@ -37,10 +37,14 @@ button {
 
 #somos-nutriestec {
     text-align: center;
-    padding: $spacing-large;
+    padding: 50px;
 
     .color-acento {
         color: map-get($colores, secundary);
+    }
+
+    .img-container {
+        width: 100%;
     }
 }
 
@@ -95,17 +99,21 @@ button {
 }
 
 #caracteristicas .container {
-    text-align: center;
-    padding: 200px 12px;
+    @include flex (column, center, center);
+    
 
 }
 
 #caracteristicas li {
-    margin: 15px 0px;
+    margin: 20px 0px;
     font-weight: bold;
-    padding: 10px;
+    padding: 20px;
 }
 
 .check {
-    height: 40px;
+    height: 15px;
+}
+
+ul {
+    padding-inline-start: 0px;
 }

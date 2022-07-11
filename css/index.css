@@ -102,7 +102,7 @@ footer .icon {
 
 /*Views*/
 /*Home*/
-#titulo {
+.titulo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,10 +114,10 @@ footer .icon {
   background-size: cover;
   background-position: center center;
 }
-#titulo h1 {
+.titulo h1 {
   color: rgb(0, 0, 0);
 }
-#titulo h2 {
+.titulo h2 {
   padding-bottom: 40px;
   font-size: 20px;
 }
@@ -138,10 +138,13 @@ button:hover, #nuestros-planes button:hover {
 
 #somos-nutriestec {
   text-align: center;
-  padding: 200px 15px;
+  padding: 50px;
 }
 #somos-nutriestec .color-acento {
   color: rgb(11, 133, 0);
+}
+#somos-nutriestec .img-container {
+  width: 100%;
 }
 
 #nuestros-planes {
@@ -185,18 +188,25 @@ button:hover, #nuestros-planes button:hover {
 }
 
 #caracteristicas .container {
-  text-align: center;
-  padding: 200px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #caracteristicas li {
-  margin: 15px 0px;
+  margin: 20px 0px;
   font-weight: bold;
-  padding: 10px;
+  padding: 20px;
 }
 
 .check {
-  height: 40px;
+  height: 15px;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
 /*Quienes Somos*/
@@ -238,7 +248,7 @@ button:hover, #nuestros-planes button:hover {
 }
 
 /*Servicios*/
-#servicios {
+.servicios {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -250,25 +260,34 @@ button:hover, #nuestros-planes button:hover {
   background-size: cover;
   background-position: center center;
 }
-#servicios h1 {
+.servicios h1 {
   color: black;
 }
 
-#derma-servicio {
+.derma-servicio {
   text-align: center;
   padding: 100px 15px;
 }
+.derma-servicio .color-acento {
+  color: rgb(11, 133, 0);
+}
 
-#vacu-servicio {
+.vacu-servicio {
   text-align: center;
   padding: 100px 15px;
   background-color: rgb(30, 30, 30);
   color: white;
 }
+.vacu-servicio .color-acento {
+  color: rgb(11, 133, 0);
+}
 
-#radio-servicio {
+.radio-servicio {
   text-align: center;
   padding: 100px 15px;
+}
+.radio-servicio .color-acento {
+  color: rgb(11, 133, 0);
 }
 
 /*Productos*/
@@ -302,32 +321,32 @@ button:hover, #nuestros-planes button:hover {
 
 .img_1 {
   grid-area: img_1;
-  width: 80%;
+  width: 100%;
 }
 
 .img_2 {
   grid-area: img_2;
-  width: 80%;
+  width: 100%;
 }
 
 .img_3 {
   grid-area: img_3;
-  width: 80%;
+  width: 100%;
 }
 
 .img_4 {
   grid-area: img_4;
-  width: 80%;
+  width: 100%;
 }
 
 .img_5 {
   grid-area: img_5;
-  width: 80%;
+  width: 100%;
 }
 
 .img_6 {
   grid-area: img_6;
-  width: 80%;
+  width: 100%;
 }
 
 /*Contacto*/
@@ -389,24 +408,25 @@ input[type=submit]:hover {
     flex-direction: row;
     padding-bottom: 0px;
   }
-  header a {
-    transition: all 0.3s linear;
-  }
-  header a:hover {
-    transform: scale(1.1, 1.1);
-  }
 
-  #titulo h1 {
+  .titulo h1 {
     font-size: 100px;
     margin: 5px;
     margin-top: 50px;
   }
-
-  #titulo h2 {
+  .titulo h1 h2 {
     font-size: 30px;
   }
 
-  #somos-nutriestec .texto {
+  #somos-nutriestec .container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  #somos-nutriestec .container .img-container {
+    width: 50%;
+  }
+  #somos-nutriestec .container .texto {
     width: 50%;
     max-width: 600px;
     text-align: initial;
@@ -416,23 +436,7 @@ input[type=submit]:hover {
     flex-direction: column;
     padding-left: 20px;
   }
-
-  #somos-nutriestec .container {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-  }
-
-  #somos-nutriestec .img-container {
-    width: 500px;
-    height: 500px;
-    background-image: url("../img/Saludable.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-size: cover;
-  }
-
-  #somos-nutriestec h2 {
+  #somos-nutriestec .container h2 {
     margin-top: 0px;
   }
 
@@ -441,22 +445,18 @@ input[type=submit]:hover {
     justify-content: center;
     align-items: center;
   }
-
-  #nuestros-planes p {
+  #nuestros-planes .planes p {
     display: block;
     margin-bottom: 50px;
   }
-
-  #nuestros-planes h3 {
+  #nuestros-planes .planes h3 {
     margin-top: 0;
     font-size: 40px;
   }
-
-  #nuestros-planes .carta {
+  #nuestros-planes .planes .carta {
     padding: 100px;
   }
-
-  #nuestros-planes h2 {
+  #nuestros-planes .planes h2 {
     font-size: 100px;
   }
 
@@ -533,16 +533,16 @@ input[type=submit]:hover {
   }
 
   /*Servicio*/
-  #servicios h1 {
+  .servicios h1 {
     font-size: 80px;
   }
 
-  #derma-servicio .container {
+  .derma-servicio .container {
     display: flex;
     justify-content: space-evenly;
   }
 
-  #derma-servicio .img-container {
+  .derma-servicio .img-container {
     width: 500px;
     height: 500px;
     background-image: url("../img/DermapenImg.jpg");
@@ -551,7 +551,7 @@ input[type=submit]:hover {
     background-size: cover;
   }
 
-  #derma-servicio .texto {
+  .derma-servicio .texto {
     width: 50%;
     max-width: 600px;
     text-align: initial;
@@ -562,12 +562,12 @@ input[type=submit]:hover {
     padding-left: 20px;
   }
 
-  #vacu-servicio .container {
+  .vacu-servicio .container {
     display: flex;
     justify-content: space-evenly;
   }
 
-  #vacu-servicio .img-container {
+  .vacu-servicio .img-container {
     width: 500px;
     height: 500px;
     background-image: url("../img/VacuterapiaImg.jpg");
@@ -576,7 +576,7 @@ input[type=submit]:hover {
     background-size: cover;
   }
 
-  #vacu-servicio .texto {
+  .vacu-servicio .texto {
     width: 50%;
     max-width: 600px;
     text-align: initial;
@@ -587,12 +587,12 @@ input[type=submit]:hover {
     padding-left: 20px;
   }
 
-  #radio-servicio .container {
+  .radio-servicio .container {
     display: flex;
     justify-content: space-evenly;
   }
 
-  #radio-servicio .img-container {
+  .radio-servicio .img-container {
     width: 500px;
     height: 500px;
     background-image: url("../img/RadioFrecuenciaImg.jpg");
@@ -601,7 +601,7 @@ input[type=submit]:hover {
     background-size: cover;
   }
 
-  #radio-servicio .texto {
+  .radio-servicio .texto {
     width: 50%;
     max-width: 600px;
     text-align: initial;
@@ -635,32 +635,32 @@ input[type=submit]:hover {
 
   .img_1 {
     grid-area: img_1;
-    width: 80%;
+    width: 90%;
   }
 
   .img_2 {
     grid-area: img_2;
-    width: 80%;
+    width: 90%;
   }
 
   .img_3 {
     grid-area: img_3;
-    width: 80%;
+    width: 90%;
   }
 
   .img_4 {
     grid-area: img_4;
-    width: 80%;
+    width: 90%;
   }
 
   .img_5 {
     grid-area: img_5;
-    width: 80%;
+    width: 90%;
   }
 
   .img_6 {
     grid-area: img_6;
-    width: 80%;
+    width: 90%;
   }
 
   /*Contacto*/

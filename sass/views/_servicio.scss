@@ -1,7 +1,7 @@
 
 /*Servicios*/
 
-#servicios {
+.servicios {
     @include flex (column, center, center);
     text-align: center;
     height: 90vh;
@@ -15,20 +15,31 @@
     }
 }   
 
-#derma-servicio {
+.derma-servicio {
     text-align: center;
     padding: 100px 15px;
+    
+    .color-acento {
+        color: map-get($colores, secundary);
+    }
 }
 
-
-#vacu-servicio {
+.vacu-servicio {
     text-align: center;
     padding: 100px 15px;
     background-color: map-get($colores, primary);
     color: white; 
+
+    .color-acento {
+        color: map-get($colores, secundary);
+    }
 }
 
-#radio-servicio {
+.radio-servicio {
     text-align: center;
     padding: 100px 15px;
+
+    .color-acento{
+        color: map-get($colores, secundary);
+    }
 }
